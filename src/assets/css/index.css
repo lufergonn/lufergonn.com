@@ -1,0 +1,99 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+
+body {
+  width: 100vw;
+  height: auto;
+  min-height: 100vh;
+  
+  background: #E0EAFC;
+  background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);
+  background: linear-gradient(to right, #CFDEF3, #E0EAFC);
+}
+
+.app {
+  width: 100%;
+}
+
+.header, .header_nav, .footer {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  width: inherit;
+  max-height: 70px;
+  overflow: hidden;
+  background: transparent;
+}
+
+.header .breadcrumb a {
+  color: #3b9c9b;
+}
+
+.header .breadcrumb li.is-active a  {
+  color: #206570;
+}
+
+.header__logo {
+  padding: 5px 0 5px 25px;
+  line-height: 0;
+}
+
+.header__logo img {
+  height: 60px;
+}
+
+.header_nav {
+  padding-top: 25px;
+  padding-right: 25px;
+}
+
+.footer {
+  width: inherit;
+  height: auto;
+  padding: 25px 15px 30px 15px;
+  background: #257985;
+}
+
+.footer p, .footer strong {
+  color: #d3d3d3;
+}
+
+.footer a {
+  color: #86ebe9;
+}
+
+.footer a:hover {
+  color: #5da09f;
+}
+
+.main {
+  width: inherit;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .app, .header_nav{
+    padding: 0;
+    margin: 0;
+  }
+
+  .header {
+    max-height: 94px;
+    overflow: hidden;
+  }
+
+  .header__logo {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .breadcrumb.is-right ul {
+    justify-content: center;
+  }
+
+  .main {
+    padding: 0 10px 0 10px;
+  }
+}
