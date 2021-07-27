@@ -1,16 +1,31 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Card from '../components/Github/Card';
 import Loading from '../components/Loading';
 import Error from '../components/Error';
+import getRepositories from '../api/getRepositories';
 import '../assets/css/github.css';
 
 const Github = () => {
   const [data, setData] = useState({
     data: [],
-    loading: false,
+    loading: true,
     error: false
   });
-  
+
+  useEffect(() => {
+    getRepositories().then(response => {
+      if (!response.error) {
+        setData({
+          data: response.data,
+          loading: false,
+          error: false
+        });
+      } else {
+        setData({...data, loading: false, error: true});
+      }
+    });
+  }, []);
+
   return (
     <>
       <div className="github_hero hero-body">
