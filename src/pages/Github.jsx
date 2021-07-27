@@ -13,18 +13,20 @@ const Github = () => {
   });
 
   useEffect(() => {
-    getRepositories().then(response => {
-      if (!response.error) {
-        setData({
-          data: response.data,
-          loading: false,
-          error: false
-        });
-      } else {
-        setData({...data, loading: false, error: true});
-      }
-    });
-  }, []);
+    if (data.loading) {
+      getRepositories().then(response => {
+        if (!response.error) {
+          setData({
+            data: response.data,
+            loading: false,
+            error: false
+          });
+        } else {
+          setData({...data, loading: false, error: true});
+        }
+      });
+    }
+  });
 
   return (
     <>
