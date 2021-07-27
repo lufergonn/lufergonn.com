@@ -1,0 +1,15 @@
+.github_hero.hero-body {
+  padding-top: 0;
+}
+
+.github_hero .image {
+  margin: auto;
+}
+
+.github_content {
+  padding: 0 30px;
+}
+
+.github__card .media {
+  align-items: center;
+}

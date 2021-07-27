@@ -73,6 +73,15 @@ body {
   margin-bottom: 20px;
 }
 
+.error {
+  width: 100%;
+  height: 50vh;
+  background-image: url('../img/error.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
 @media (max-width: 768px) {
   .app, .header_nav{
     padding: 0;
