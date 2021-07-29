@@ -30,7 +30,7 @@ const Github = () => {
 
   return (
     <>
-      <div className="github_hero hero-body">
+      <div className="github__hero hero-body">
         <div className="container has-text-centered">
           <figure className="image is-128x128">
             <img className="is-rounded" src="https://avatars.githubusercontent.com/u/47482967?v=4" alt="Github avatar"/>
@@ -43,7 +43,7 @@ const Github = () => {
           </p>
         </div>
       </div>
-      <div className="github_content">
+      <div className="github__content box">
         { data.loading ? <Loading /> : null }
         { data.error ? <Error /> : null }
         { 

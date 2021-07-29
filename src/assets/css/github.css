@@ -1,13 +1,14 @@
-.github_hero.hero-body {
+.github__hero.hero-body {
   padding-top: 0;
 }
 
-.github_hero .image {
+.github__hero .image {
   margin: auto;
 }
 
-.github_content {
-  padding: 0 30px;
+.github__content.box {
+  margin: 0 10px;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .github__card .tag {
