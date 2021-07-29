@@ -1,7 +1,7 @@
 const Card = ({ data }) => {
   return (
     <div className="github__card box">
-      <article className="media">
+      <article className="media is-align-items-center">
         <div className="media-content">
           <div className="content">
             <p>
