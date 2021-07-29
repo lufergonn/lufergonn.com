@@ -5,15 +5,14 @@ const Card = ({ data }) => {
         <div className="media-content">
           <div className="content">
             <p>
-              <strong>{data.name.charAt(0).toUpperCase() + data.name.slice(1)}</strong><br/>
-              <small><a href={data.html_url} target="_blank" rel="noreferrer">{data.full_name}</a></small><br/>
-              <br/>
-              {data.description}
+              <strong className="is-capitalized">{data.name}</strong><br/>
+              <small><a href={data.html_url} target="_blank" rel="noreferrer">{data.full_name}</a></small><br/><br/>
+              <span>{data.description}</span>
             </p>
-            <p>    
-              { data.license ? <span><span className="tag is-rounded is-info">{data.license.name}</span> </span> : null }
-              { data.language ? <span><span className="tag is-rounded is-primary">{data.language}</span> </span> : null }
-              { data.fork ? <span><span className="tag is-rounded is-black">Fork</span> </span> : null } 
+            <p className="is-pulled-right">
+              { data.license ? <span className="tag is-rounded is-info">{data.license.name}</span> : null }
+              { data.language ? <span className="tag is-rounded is-primary">{data.language}</span> : null }
+              { data.fork ? <span className="tag is-rounded is-black">Fork</span> : null } 
             </p>
           </div>
         </div>
