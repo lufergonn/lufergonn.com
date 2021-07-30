@@ -1,0 +1,47 @@
+{
+  "series": [{
+    "data": [1, 1]
+  }],
+  "options": {
+    "chart": {
+      "width": "100%",
+      "sparkline": {
+        "enabled": true
+      }
+    },
+    "stroke": {
+      "curve": "smooth",
+      "colors": ["#009999"],
+      "width": 3
+    },
+    "fill": {
+      "colors": ["#009999"],
+      "opacity": 0.3
+    },
+    "xaxis": {
+      "crosshairs": {
+        "width": 1
+      }
+    },
+    "yaxis": {
+      "min": 0
+    },
+    "title": {
+      "text": "$0.00",
+      "offsetX": 0,
+      "style": {
+        "fontSize": "24px"
+      }
+    },
+    "subtitle": { 
+      "text": "---",
+      "offsetX": 0,
+      "style": {
+        "fontSize": "14px"
+      }
+    },
+    "tooltip": {
+      "enabled": false
+    }
+  }
+}
