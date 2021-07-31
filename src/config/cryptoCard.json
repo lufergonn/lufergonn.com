@@ -19,11 +19,13 @@
       "opacity": 0.3
     },
     "xaxis": {
+      "show": false,
       "crosshairs": {
         "width": 1
       }
     },
     "yaxis": {
+      "show": false,
       "min": 0
     },
     "title": {
