@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const getCryptoMarketPrice = (name='') => {
-  const url = `https://api.coingecko.com/api/v3/coins/${name.toLowerCase()}/market_chart?vs_currency=usd&days=7&interval=daily`;
+  const url = `https://api.coingecko.com/api/v3/coins/${name.toLowerCase()}/market_chart?vs_currency=usd&days=30&interval=daily`;
 
   return axios.get(url)
     .then(response => {
