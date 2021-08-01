@@ -40,7 +40,7 @@ const CryptoCard = ({ name, color, image }) => {
 
   return (
     <div className="box">
-      <img src={`https://assets.coingecko.com/coins/images/${image}.png`} />
+      <img src={`https://assets.coingecko.com/coins/images/${image}.png`} alt={`Icon ${name}`}/>
       <Chart options={c.options} series={c.series} type="area" height={150}/>
     </div>
   );
