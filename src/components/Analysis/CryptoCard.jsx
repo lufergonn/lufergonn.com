@@ -3,7 +3,7 @@ import config from '../../config/cryptoCard.json';
 import getCryptoMarketPrice from '../../api/getCryptoMarketPrice';
 import { useEffect, useState } from 'react';
 
-const CryptoCard = ({ name, color }) => {
+const CryptoCard = ({ name, color, image }) => {
   let c = JSON.parse(JSON.stringify(config));
   const [data, setData] = useState({
     loading: true,
@@ -40,6 +40,7 @@ const CryptoCard = ({ name, color }) => {
 
   return (
     <div className="box">
+      <img src={`https://assets.coingecko.com/coins/images/${image}.png`} />
       <Chart options={c.options} series={c.series} type="area" height={150}/>
     </div>
   );
