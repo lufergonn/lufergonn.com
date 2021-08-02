@@ -16,12 +16,17 @@
 }
 
 .analysis__content-cardswebpages.box,
-.analysis__content-cardaside .box {
-  background-color: rgba(255, 255, 255, 0.5);
+.analysis__content-cardaside_box.box {
+  background-color: #47748a96;
+}
+
+.analysis__webpagecard.box,
+.analysis__content-cardaside_box .box {
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .analysis__webpagecard.box {
-  border-left: 3px solid rgb(34, 124, 160);
+  border-left: 3px solid #569b79
 }
 
 .analysis__webpagecard .tag {

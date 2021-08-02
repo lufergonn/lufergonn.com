@@ -4,11 +4,10 @@ body {
   width: 100vw;
   height: auto;
   min-height: 100vh;
-  
-  background: #E0EAFC;
-  background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);
-  background: linear-gradient(to right, #CFDEF3, #E0EAFC);
-}
+  background: #16222A;
+  background: -webkit-linear-gradient(to right, #3A6073, #16222A);
+  background: linear-gradient(to right, #3A6073, #16222A);
+} 
 
 .app {
   width: 100%;
@@ -26,12 +25,14 @@ body {
   background: transparent;
 }
 
-.header .breadcrumb a {
-  color: #3b9c9b;
+.header .breadcrumb a,
+.footer a {
+  color: #7aa4bd;
 }
 
-.header .breadcrumb li.is-active a  {
-  color: #206570;
+.header .breadcrumb li.is-active a,
+.footer a:hover  {
+  color: #2d7097;
 }
 
 .header__logo {
@@ -52,19 +53,11 @@ body {
   width: inherit;
   height: auto;
   padding: 25px 15px 30px 15px;
-  background: #257985;
+  background: #00293c;
 }
 
 .footer p, .footer strong {
   color: #d3d3d3;
-}
-
-.footer a {
-  color: #86ebe9;
-}
-
-.footer a:hover {
-  color: #5da09f;
 }
 
 .main {
